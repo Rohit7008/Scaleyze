@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Light theme colors */
+        --background: 0 0% 98%;
+        /* Soft off-white */
+        --surface: 240 10% 96%;
+        /* Light gray */
+        --surface-highlight: 240 10% 92%;
+        /* Slightly darker gray */
+        --border: 240 10% 88%;
+        --input: 240 10% 92%;
+        --ring: 240 5% 84%;
+
+        --foreground: 240 10% 10%;
+        /* Near black */
+        --muted-foreground: 240 5% 45%;
+        /* Medium gray */
+
+        --primary: 240 10% 10%;
+        --primary-foreground: 0 0% 98%;
+
+        --secondary: 240 10% 96%;
+        --secondary-foreground: 240 10% 10%;
+
+        --accent: 240 10% 92%;
+        --accent-foreground: 240 10% 10%;
+    }
+
+    .dark {
+        /* Dark theme colors */
+        --background: 240 10% 4%;
+        /* Zinc 950 equivalent */
+        --surface: 240 6% 10%;
+        /* Zinc 900 equivalent */
+        --surface-highlight: 240 5% 15%;
+        /* Zinc 800 equivalent */
+        --border: 240 5% 15%;
+        --input: 240 5% 15%;
+        --ring: 240 5% 84%;
+
+        --foreground: 0 0% 98%;
+        /* Zinc 50 equivalent */
+        --muted-foreground: 240 5% 65%;
+        /* Zinc 400 equivalent */
+
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 6% 10%;
+
+        --secondary: 240 6% 10%;
+        --secondary-foreground: 0 0% 98%;
+
+        --accent: 240 5% 15%;
+        --accent-foreground: 0 0% 98%;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-feature-settings: "rlig" 1, "calt" 1;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    * {
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    .glass-card {
+        @apply bg-surface/50 backdrop-blur-xl border;
+    }
+
+    /* Dark mode glass card */
+    .dark .glass-card {
+        @apply border-white/5;
+    }
+
+    /* Light mode glass card */
+    .glass-card {
+        @apply border-black/5;
+    }
+
+    .glass-card-hover {
+        @apply hover:bg-surface/80 transition-all duration-300 hover:shadow-2xl;
+    }
+
+    /* Dark mode glass card hover */
+    .dark .glass-card-hover {
+        @apply hover:border-white/10 hover:shadow-black/50;
+    }
+
+    /* Light mode glass card hover */
+    .glass-card-hover {
+        @apply hover:border-black/10 hover:shadow-black/10;
+    }
+
+    .bg-grid {
+        background-image:
+            linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+            linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    .bg-grid-mask {
+        mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+    }
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent;
+    }
+
+    /* Dark mode text gradient */
+    .dark .text-gradient {
+        @apply bg-gradient-to-br from-white via-white/90 to-white/40;
+    }
+
+    /* Light mode text gradient */
+    .text-gradient {
+        @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-600;
+    }
+
+    .glow-primary {
+        box-shadow: 0 0 20px rgba(128, 128, 128, 0.15);
+    }
+
+    .dark .glow-primary {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--surface-highlight));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
+}
