@@ -82,8 +82,8 @@ export function ServicesPreview() {
                                         </p>
                                     </div>
 
-                                    <div>
-                                        <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
+                                    <div className="flex items-center justify-between gap-4 mt-4">
+                                        <div className="flex flex-wrap gap-2">
                                             {service.tags.map((tag) => (
                                                 <span key={tag} className="text-xs font-medium px-2 py-1 rounded bg-surface-highlight text-muted-foreground border border-border">
                                                     {tag}
@@ -91,7 +91,7 @@ export function ServicesPreview() {
                                             ))}
                                         </div>
 
-                                        <div className="flex items-center text-xs sm:text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
+                                        <div className="flex items-center text-xs sm:text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0 whitespace-nowrap">
                                             Learn more <ArrowRight className="ml-2 w-4 h-4" />
                                         </div>
                                     </div>

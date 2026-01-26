@@ -22,13 +22,13 @@ const workflowSteps = [
     },
     {
         step: "02",
-        title: "WhatsApp Alert",
+        title: "WhatsApp & Slack Alert",
         icon: (
             <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
         ),
-        description: "The moment the form is submitted, your sales team gets an instant WhatsApp notification with all lead details. No delays, no checking emails — immediate awareness of every opportunity."
+        description: "The moment the form is submitted, your sales team gets an instant WhatsApp or Slack notification with all lead details. No delays, no checking emails — immediate awareness of every opportunity."
     },
     {
         step: "03",
@@ -38,7 +38,7 @@ const workflowSteps = [
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
             </svg>
         ),
-        description: "Lead data is automatically saved to your CRM with complete contact history, source tracking, and initial status. Zero manual data entry, zero human error, 100% accuracy."
+        description: "Lead data is automatically saved to your CRM (HubSpot, Pipedrive, Zoho) with complete contact history, source tracking, and initial status. Zero manual data entry, zero human error, 100% accuracy."
     },
     {
         step: "04",
@@ -52,7 +52,7 @@ const workflowSteps = [
     }
 ];
 
-export default function LeadCaptureCaseStudy() {
+export default function LeadCaptureContent() {
     return (
         <main className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden">
             <Navbar />
@@ -72,7 +72,7 @@ export default function LeadCaptureCaseStudy() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-                            Automated workflow that captures, notifies, and supports conversion. Replaced manual lead routing with automated intake and assignment.
+                            Automated workflow that captures, notifies, and supports conversion. Replaced manual lead routing with automated <strong>WhatsApp & Slack notifications</strong>.
                         </p>
 
                         {/* Redesigned Key Metrics - Glassmorphic Cards */}
@@ -107,7 +107,7 @@ export default function LeadCaptureCaseStudy() {
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60" />
                         <Image
                             src="/lead-capture-system.png"
-                            alt="Lead Capture System Dashboard"
+                            alt="Lead Capture System Dashboard showing automatic lead routing"
                             width={1200}
                             height={700}
                             className="w-full h-auto"
@@ -129,12 +129,12 @@ export default function LeadCaptureCaseStudy() {
                         >
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">The Challenge</h2>
                             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                                Most businesses lose 60% of potential customers within the first 5 minutes. Why? Because manual lead handling is slow, prone to errors, and impossible to scale.
+                                Most businesses lose 60% of potential customers within the first 5 minutes. Why? Because manual lead handling is slow, prone to errors, and impossible to scale. Whether you are in Real Estate or SaaS, speed is everything.
                             </p>
                             <div className="space-y-4">
                                 {[
                                     "Website forms submitted into a black hole",
-                                    "Manual entry takes hours, leads go cold",
+                                    "Manual entry into Google Sheets takes hours",
                                     "Zero follow-up system means lost revenue",
                                     "Sales team burdened with busywork"
                                 ].map((item, i) => (

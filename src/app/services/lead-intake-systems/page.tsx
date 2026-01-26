@@ -106,22 +106,21 @@ export default function LeadIntakeSystemsPage() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-br from-purple-500 to-pink-600 rounded-3xl p-8 md:p-16 text-center text-white overflow-hidden relative"
+                        className="bg-surface border border-border rounded-3xl p-8 md:p-16 text-center overflow-hidden relative"
                     >
-                        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+                        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03] dark:opacity-[0.05]" />
                         <div className="relative z-10 max-w-2xl mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold mb-6">
                                 Ready to Automate Your Lead Pipeline?
                             </h2>
-                            <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
+                            <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
                                 Let's build a lead capture and nurture system that works around the clock.
                             </p>
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-600 rounded-full font-bold hover:bg-white/90 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-                            >
-                                Get Your Free Consultation
-                                <ArrowRight className="w-5 h-5" />
+                            <Link href="/contact">
+                                <Button size="lg" className="h-14 px-8 text-base font-bold rounded-full group">
+                                    Get Your Free Consultation
+                                    <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+                                </Button>
                             </Link>
                         </div>
                     </motion.div>

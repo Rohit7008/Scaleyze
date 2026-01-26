@@ -62,11 +62,7 @@ export function Hero() {
                                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </Button>
                         </Link>
-                        <Link href="/services" className="w-full sm:w-auto">
-                            <Button variant="outline" size="lg" className="h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base w-full sm:w-auto">
-                                View Our Work
-                            </Button>
-                        </Link>
+
                     </motion.div>
                 </div>
             </Container>

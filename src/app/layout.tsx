@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import '@/app/globals.css'
 import { ThemeProvider } from '@/contexts/ThemeContext'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://roonity.com'),
+  metadataBase: new URL('https://scaleyze.com'),
   title: {
-    default: 'Roonity | Business Systems That Scale - Automation & Web Development',
-    template: '%s | Roonity'
+    default: 'Scaleyze | Business Systems That Scale - Automation & Web Development',
+    template: '%s | Scaleyze'
   },
   description: 'We design business systems that connect websites, automation, and operations into one structured workflow. Expert in customer-facing systems, lead automation, revenue operations, and AI-assisted business systems.',
   keywords: [
@@ -27,11 +27,18 @@ export const metadata: Metadata = {
     'conversion optimization',
     'sales automation',
     'internal operations systems',
-    'system integration'
+    'system integration',
+    'SaaS implementation agency',
+    'HubSpot automation consultant',
+    'custom CRM development',
+    'AI for small business operations',
+    'automated lead follow up systems',
+    'business scaling consultant',
+    'operational efficiency services'
   ],
-  authors: [{ name: 'Roonity' }],
-  creator: 'Roonity',
-  publisher: 'Roonity',
+  authors: [{ name: 'Scaleyze' }],
+  creator: 'Scaleyze',
+  publisher: 'Scaleyze',
   formatDetection: {
     email: false,
     address: false,
@@ -40,25 +47,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://roonity.com',
-    title: 'Roonity | Business Systems That Scale',
+    url: 'https://scaleyze.com',
+    title: 'Scaleyze | Business Systems That Scale',
     description: 'We design business systems that connect websites, automation, and operations into one structured workflow.',
-    siteName: 'Roonity',
+    siteName: 'Scaleyze',
     images: [
       {
-        url: '/logo/Nametag/Roonity Logo (2).png',
+        url: '/logo/Nametag/Scaleyze Logo White.png',
         width: 1200,
         height: 630,
-        alt: 'Roonity - Business Systems That Scale',
+        alt: 'Scaleyze - Business Systems That Scale',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roonity | Business Systems That Scale',
+    title: 'Scaleyze | Business Systems That Scale',
     description: 'We design business systems that connect websites, automation, and operations into one structured workflow.',
-    images: ['/logo/Nametag/Roonity Logo (2).png'],
-    creator: '@roonity',
+    images: ['/logo/Nametag/Scaleyze Logo White.png'],
+    creator: '@scaleyze',
   },
   robots: {
     index: true,
@@ -72,9 +79,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/logo/Favicon/Roonity Logo (1).png',
-    shortcut: '/logo/Favicon/Roonity Logo (1).png',
-    apple: '/logo/Favicon/Roonity Logo (1).png',
+    icon: '/logo/Favicon/Scaleyze Logo (1).png',
+    shortcut: '/logo/Favicon/Scaleyze Logo (1).png',
+    apple: '/logo/Favicon/Scaleyze Logo (1).png',
   },
   verification: {
     // Add your verification codes here when available
@@ -97,28 +104,74 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Roonity',
-              url: 'https://roonity.com',
-              logo: 'https://roonity.com/logo/Nametag/Roonity Logo (2).png',
-              description: 'We design business systems that connect websites, automation, and operations into one structured workflow.',
+              '@type': 'ProfessionalService',
+              name: 'Scaleyze',
+              url: 'https://scaleyze.com',
+              logo: 'https://scaleyze.com/logo/Nametag/Scaleyze Logo White.png',
+              description: 'We design business systems that connect websites, automation, and operations into one structured workflow. Specializing in AI automation, CRM integration, and revenue operations.',
+              priceRange: '$$$',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Bangalore',
+                addressCountry: 'IN'
+              },
               sameAs: [
-                // Add your social media profiles here
-                // 'https://twitter.com/roonity',
-                // 'https://linkedin.com/company/roonity',
+                'https://twitter.com/scaleyze',
+                'https://linkedin.com/company/scaleyze',
               ],
               contactPoint: {
                 '@type': 'ContactPoint',
-                contactType: 'Customer Service',
-                email: 'hello@roonity.com',
+                contactType: 'sales',
+                email: 'hello@scaleyze.com',
+                availableLanguage: ['English']
               },
-              areaServed: 'Worldwide',
+              areaServed: {
+                '@type': 'GeoCircle',
+                geoMidpoint: {
+                  '@type': 'GeoCoordinates',
+                  latitude: 12.9716,
+                  longitude: 77.5946
+                },
+                geoRadius: '1000000'
+              },
+              offers: [
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'Business Automation Services'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'Custom Web Application Development'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'Revenue Operations Consulting'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'AI Business System Integration'
+                  }
+                }
+              ],
               serviceType: [
                 'Business Automation',
                 'Web Development',
                 'System Integration',
                 'Workflow Automation',
-                'AI-Assisted Business Systems'
+                'AI-Assisted Business Systems',
+                'CRM Implementation',
+                'Lead Generation Systems'
               ],
             }),
           }}

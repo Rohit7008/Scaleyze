@@ -34,16 +34,16 @@ export function Navbar() {
                 >
                     {/* Light mode logo */}
                     <Image
-                        src="/logo/RoonityLogo.png"
-                        alt="Roonity Logo"
+                        src="/logo/ScaleyzeLogo.png"
+                        alt="Scaleyze Logo"
                         width={112}
                         height={112}
                         className="w-20 h-20 md:w-32 md:h-32 object-contain filter drop-shadow-xl dark:hidden"
                     />
                     {/* Dark mode logo */}
                     <Image
-                        src="/logo/Roonity Logo.png"
-                        alt="Roonity Logo"
+                        src="/logo/Scaleyze Logo.png"
+                        alt="Scaleyze Logo"
                         width={112}
                         height={112}
                         className="w-20 h-20 md:w-32 md:h-32 object-contain filter drop-shadow-xl hidden dark:block"
@@ -61,6 +61,9 @@ export function Navbar() {
                     <Link href="/#why-us" className="hover:text-foreground transition-colors">
                         Why Us
                     </Link>
+                    <Link href="/#faq" className="hover:text-foreground transition-colors">
+                        FAQ
+                    </Link>
                     <Link href="/contact" className="hover:text-foreground transition-colors">
                         Contact
                     </Link>
@@ -68,12 +71,6 @@ export function Navbar() {
 
                 <div className="hidden md:flex items-center gap-3 lg:gap-4 ml-auto">
                     <ThemeToggle />
-
-                    <Link href="/contact">
-                        <Button variant="glow" size="sm">
-                            Start Project
-                        </Button>
-                    </Link>
                 </div>
 
                 {/* Mobile Actions */}
@@ -118,18 +115,17 @@ export function Navbar() {
                             <Link href="/#why-us" onClick={() => setIsOpen(false)} className="hover:text-foreground transition-colors">
                                 Why Us
                             </Link>
+                            <Link href="/#faq" onClick={() => setIsOpen(false)} className="hover:text-foreground transition-colors">
+                                FAQ
+                            </Link>
                             <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-foreground transition-colors">
                                 Contact
                             </Link>
                         </nav>
-                        <Link href="/contact" onClick={() => setIsOpen(false)}>
-                            <Button variant="glow" size="lg" className="mt-4">
-                                Start Project
-                            </Button>
-                        </Link>
+
                     </motion.div>
                 )}
             </Container>
-        </motion.header>
+        </motion.header >
     );
 }

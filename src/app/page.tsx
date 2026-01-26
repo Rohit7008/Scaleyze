@@ -2,19 +2,19 @@ import { CTA } from "@/components/sections/CTA";
 import { Hero } from "@/components/sections/Hero";
 import { Process } from "@/components/sections/Process";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
-import { SystemExamples } from "@/components/sections/SystemExamples";
 import { ValueProps } from "@/components/sections/ValueProps";
 import { Navbar } from "@/components/layout/Navbar";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { Footer } from "@/components/layout/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Roonity | Business Systems That Scale',
+    title: 'Scaleyze | Business Systems That Scale',
     description: 'We design structured systems for conversion, operations, and execution. Expert business automation services including customer-facing systems, lead automation, revenue operations, and AI-assisted workflows.',
     openGraph: {
-        title: 'Roonity | Business Systems That Scale',
+        title: 'Scaleyze | Business Systems That Scale',
         description: 'We design structured systems for conversion, operations, and execution — from websites to automation to internal workflows.',
-        url: 'https://roonity.com',
+        url: 'https://scaleyze.com',
         type: 'website',
     },
 };
@@ -27,8 +27,8 @@ export default function Home() {
             <ValueProps />
             <ServicesPreview />
             <Process />
-            <SystemExamples />
             <CTA />
+            <FAQSection />
             <Footer />
         </main>
     );

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/_next/', '/admin/'],
             },
         ],
-        sitemap: 'https://roonity.com/sitemap.xml',
+        sitemap: 'https://scaleyze.com/sitemap.xml',
     }
 }

@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
                             <section className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
                                 <p className="text-muted-foreground leading-relaxed mb-4">
-                                    Roonity ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our business automation and web development services.
+                                    Scaleyze ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our business automation and web development services.
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     By using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our services.
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
                                     <li><strong>Withdraw Consent:</strong> Withdraw consent for marketing communications at any time</li>
                                 </ul>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    To exercise these rights, please contact us at <a href="mailto:privacy@roonity.com" className="text-primary hover:underline">privacy@roonity.com</a>
+                                    To exercise these rights, please contact us at <a href="mailto:privacy@scaleyze.com" className="text-primary hover:underline">privacy@scaleyze.com</a>
                                 </p>
                             </section>
 
@@ -195,9 +195,9 @@ export default function PrivacyPolicy() {
                                     If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
                                 </p>
                                 <div className="bg-surface/50 border border-border rounded-lg p-6">
-                                    <p className="font-semibold mb-2">Roonity</p>
-                                    <p className="text-muted-foreground">Email: <a href="mailto:privacy@roonity.com" className="text-primary hover:underline">privacy@roonity.com</a></p>
-                                    <p className="text-muted-foreground">Website: <a href="https://roonity.com" className="text-primary hover:underline">www.roonity.com</a></p>
+                                    <p className="font-semibold mb-2">Scaleyze</p>
+                                    <p className="text-muted-foreground">Email: <a href="mailto:privacy@scaleyze.com" className="text-primary hover:underline">privacy@scaleyze.com</a></p>
+                                    <p className="text-muted-foreground">Website: <a href="https://scaleyze.com" className="text-primary hover:underline">www.scaleyze.com</a></p>
                                 </div>
                             </section>
 

@@ -25,7 +25,7 @@ export default function TermsOfService() {
                             <section className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4">1. Agreement to Terms</h2>
                                 <p className="text-muted-foreground leading-relaxed mb-4">
-                                    These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and Roonity ("Company," "we," "our," or "us") governing your use of our website and business automation services.
+                                    These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and Scaleyze ("Company," "we," "our," or "us") governing your use of our website and business automation services.
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     By accessing our website, engaging our services, or entering into a service agreement, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, please discontinue use of our services immediately.
@@ -35,7 +35,7 @@ export default function TermsOfService() {
                             <section className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4">2. Services Description</h2>
                                 <p className="text-muted-foreground leading-relaxed mb-4">
-                                    Roonity provides business systems design and implementation services, including but not limited to:
+                                    Scaleyze provides business systems design and implementation services, including but not limited to:
                                 </p>
                                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
                                     <li>Customer-facing systems (websites and web applications)</li>
@@ -127,7 +127,7 @@ export default function TermsOfService() {
 
                                 <h3 className="text-xl font-semibold mb-3 mt-6">5.2 Company Retention</h3>
                                 <p className="text-muted-foreground leading-relaxed mb-4">
-                                    Roonity retains ownership of:
+                                    Scaleyze retains ownership of:
                                 </p>
                                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
                                     <li>Pre-existing code, frameworks, and tools</li>
@@ -274,14 +274,14 @@ export default function TermsOfService() {
                             <section className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4">12. Indemnification</h2>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Client agrees to indemnify and hold Roonity harmless from claims, damages, and expenses arising from: (a) Client's use of deliverables, (b) content or materials provided by Client, (c) violation of third-party rights, or (d) breach of these Terms.
+                                    Client agrees to indemnify and hold Scaleyze harmless from claims, damages, and expenses arising from: (a) Client's use of deliverables, (b) content or materials provided by Client, (c) violation of third-party rights, or (d) breach of these Terms.
                                 </p>
                             </section>
 
                             <section className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4">13. Independent Contractor</h2>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Roonity operates as an independent contractor. Nothing in these Terms creates an employment, partnership, joint venture, or agency relationship. We are responsible for our own taxes, insurance, and business expenses.
+                                    Scaleyze operates as an independent contractor. Nothing in these Terms creates an employment, partnership, joint venture, or agency relationship. We are responsible for our own taxes, insurance, and business expenses.
                                 </p>
                             </section>
 
@@ -346,9 +346,9 @@ export default function TermsOfService() {
                                     For questions regarding these Terms, please contact us:
                                 </p>
                                 <div className="bg-surface/50 border border-border rounded-lg p-6">
-                                    <p className="font-semibold mb-2">Roonity</p>
-                                    <p className="text-muted-foreground">Email: <a href="mailto:legal@roonity.com" className="text-primary hover:underline">legal@roonity.com</a></p>
-                                    <p className="text-muted-foreground">Website: <a href="https://roonity.com" className="text-primary hover:underline">www.roonity.com</a></p>
+                                    <p className="font-semibold mb-2">Scaleyze</p>
+                                    <p className="text-muted-foreground">Email: <a href="mailto:legal@scaleyze.com" className="text-primary hover:underline">legal@scaleyze.com</a></p>
+                                    <p className="text-muted-foreground">Website: <a href="https://scaleyze.com" className="text-primary hover:underline">www.scaleyze.com</a></p>
                                 </div>
                             </section>
                         </div>

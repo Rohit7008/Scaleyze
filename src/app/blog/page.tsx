@@ -16,7 +16,7 @@ const caseStudies = [
         tagline: "Never miss a hot lead again",
         image: "/lead-capture-system.png",
         result: "3x faster response time",
-        href: "/case-studies/lead-capture",
+        href: "/blog/lead-capture",
         description: "Automated workflow that captures, notifies, and tracks every opportunity from your website forms."
     },
     {
@@ -25,12 +25,12 @@ const caseStudies = [
         tagline: "From visitor to confirmed client in 60 seconds",
         image: "/booking-automation-system.png",
         result: "24/7 booking availability",
-        href: "/case-studies/booking-automation",
+        href: "/blog/booking-automation",
         description: "Fully automated booking, payment, and confirmation system that works while you sleep."
     }
 ];
 
-export default function CaseStudiesPage() {
+export default function BlogPage() {
     return (
         <main className="flex min-h-screen flex-col bg-background text-foreground overflow-x-hidden">
             <Navbar />
@@ -44,10 +44,10 @@ export default function CaseStudiesPage() {
                         className="max-w-4xl mx-auto text-center mb-16 md:mb-24"
                     >
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            Our <span className="text-primary">Case Studies</span>
+                            Our <span className="text-primary">Blog</span>
                         </h1>
                         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                            See how we've helped businesses automate their operations and scale effectively.
+                            Insights, updates, and deep dives into the systems we build.
                         </p>
                     </motion.div>
 
@@ -75,7 +75,7 @@ export default function CaseStudiesPage() {
                                             {/* Overlay on hover */}
                                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                                 <span className="px-6 py-3 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full font-semibold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                                    View Case Study
+                                                    Read Article
                                                 </span>
                                             </div>
                                         </div>

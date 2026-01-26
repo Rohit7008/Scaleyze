@@ -36,19 +36,19 @@ export function ValueProps() {
                         Why Choose
                         {/* Light mode logo */}
                         <Image
-                            src="/logo/Nametag/Roonity Logo (3).png"
-                            alt="Roonity"
-                            width={300}
-                            height={100}
-                            className="inline-block h-10 sm:h-12 md:h-14 w-auto object-contain dark:hidden"
+                            src="/logo/Nametag/Scaleyze Logo Black.png"
+                            alt="Scaleyze"
+                            width={450}
+                            height={150}
+                            className="inline-block h-12 sm:h-14 md:h-16 w-auto object-contain dark:hidden"
                         />
                         {/* Dark mode logo */}
                         <Image
-                            src="/logo/Nametag/Roonity Logo (2).png"
-                            alt="Roonity"
-                            width={300}
-                            height={100}
-                            className="inline-block h-10 sm:h-12 md:h-14 w-auto object-contain hidden dark:block"
+                            src="/logo/Nametag/Scaleyze Logo White.png"
+                            alt="Scaleyze"
+                            width={450}
+                            height={150}
+                            className="inline-block h-12 sm:h-14 md:h-16 w-auto object-contain hidden dark:block"
                         />
                     </h2>
                     <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
