@@ -11,6 +11,15 @@ import Image from "next/image";
 
 const caseStudies = [
     {
+        id: "the-mathematics-of-conversion",
+        title: "The Math of Conversion",
+        tagline: "How 100ms latency costs you 7% sales",
+        image: "/logo/Nametag/Scaleyze Logo White.png",
+        result: "Deep Research",
+        href: "/blog/the-mathematics-of-conversion",
+        description: "An engineering breakdown of why speed is the single most important factor in your conversion funnel."
+    },
+    {
         id: "lead-capture",
         title: "Lead Capture System",
         tagline: "Never miss a hot lead again",
