@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
                         className="max-w-4xl mx-auto"
                     >
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
-                        <p className="text-muted-foreground mb-8">Last Updated: January 13, 2026</p>
+                        <p className="text-muted-foreground mb-8">Last Updated: November 24, 2026</p>
 
                         <div className="prose prose-lg dark:prose-invert max-w-none">
                             <section className="mb-12">
@@ -211,6 +211,30 @@ export default function PrivacyPolicy() {
                                     <li>California Consumer Privacy Act (CCPA) for California residents</li>
                                     <li>Other applicable state and international privacy laws</li>
                                 </ul>
+                            </section>
+
+                            <section id="instagram-facebook" className="mb-12">
+                                <h2 className="text-2xl font-bold mb-4">14. Instagram and Facebook Messages</h2>
+                                <p className="text-muted-foreground leading-relaxed mb-4">
+                                    When you comment on our Instagram or Facebook posts or send us a direct message, we receive your public username, the content of your comment or message, and the time it was sent, through Meta&apos;s official APIs. We use this only to reply to you, answer your questions and arrange a consultation if you ask for one.
+                                </p>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Some replies are drafted or sent by our automated assistant, with a person reviewing the conversation. Message text may be processed by AI service providers (such as Google Gemini or Cloudflare Workers AI) solely to write a reply. We do not sell this data, use it for advertising, or share it with anyone else.
+                                </p>
+                            </section>
+
+                            <section id="data-deletion" className="mb-12">
+                                <h2 className="text-2xl font-bold mb-4">15. Data Deletion</h2>
+                                <p className="text-muted-foreground leading-relaxed mb-4">
+                                    You can ask us to delete the data we hold about you at any time, including your Instagram or Facebook comments and messages stored by us:
+                                </p>
+                                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                                    <li>Send the word <strong>DELETE</strong> in a direct message to <a href="https://www.instagram.com/scaleyze/" className="text-primary hover:underline">@scaleyze on Instagram</a> or to our Facebook Page, or</li>
+                                    <li>Email <a href="mailto:privacy@scaleyze.com" className="text-primary hover:underline">privacy@scaleyze.com</a> with your username.</li>
+                                </ul>
+                                <p className="text-muted-foreground leading-relaxed mt-4">
+                                    We delete your data within 30 days and confirm when it is done. Messages that remain inside Instagram or Facebook are controlled by Meta and can be removed from your own account.
+                                </p>
                             </section>
                         </div>
                     </motion.div>
